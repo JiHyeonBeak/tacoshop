@@ -10,4 +10,10 @@ public class MainController {
     public String getMain() {
         return "main";
     }
+
+    @GetMapping("/getJoin")
+    public String getJoin() {
+        return "complete";
+    }
+
 }
