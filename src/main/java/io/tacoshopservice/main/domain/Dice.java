@@ -16,4 +16,7 @@ public class Dice {
     @Column(nullable = false)
     private String tacosName;
 
+    @Column(nullable = false)
+    private String tacosContent;
+
 }

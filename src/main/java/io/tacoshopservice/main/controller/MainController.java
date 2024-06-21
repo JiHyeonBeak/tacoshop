@@ -16,4 +16,9 @@ public class MainController {
         return "complete";
     }
 
+    @GetMapping("/getDice")
+    public String getDice() {
+        return "complete";
+    }
+
 }
