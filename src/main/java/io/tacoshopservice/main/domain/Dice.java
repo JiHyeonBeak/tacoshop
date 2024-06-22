@@ -4,6 +4,8 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
+import java.sql.Date;
+
 @Getter
 @NoArgsConstructor
 @Entity
@@ -19,4 +21,6 @@ public class Dice {
     @Column(nullable = false)
     private String tacosContent;
 
+    @Column(nullable = false)
+    private Date createDate;
 }
