@@ -1,4 +1,4 @@
-package io.tacoshopservice.main.domain;
+package io.tacoshopservice.main.domain.dice;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -9,7 +9,7 @@ import java.sql.Date;
 @Getter
 @NoArgsConstructor
 @Entity
-public class Dice {
+public class Dice extends BaseTimeEntity{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,6 +21,4 @@ public class Dice {
     @Column(nullable = false)
     private String tacosContent;
 
-    @Column(nullable = false)
-    private Date createDate;
 }
