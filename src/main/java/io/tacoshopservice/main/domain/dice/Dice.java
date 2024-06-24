@@ -21,4 +21,7 @@ public class Dice extends BaseTimeEntity{
     @Column(nullable = false)
     private String tacosContent;
 
+    @Column(nullable = false)
+    private String author;
+
 }
