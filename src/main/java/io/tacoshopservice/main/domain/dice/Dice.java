@@ -1,6 +1,7 @@
 package io.tacoshopservice.main.domain.dice;
 
 import jakarta.persistence.*;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -23,5 +24,13 @@ public class Dice extends BaseTimeEntity{
 
     @Column(nullable = false)
     private String author;
+
+    @Builder
+    public Dice(String tacosName, String tacosContent, String author) {
+        this.tacosName = tacosName;
+        this.tacosContent = tacosContent;
+        this.author = author;
+    }
+
 
 }
