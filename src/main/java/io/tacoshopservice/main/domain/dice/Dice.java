@@ -32,5 +32,4 @@ public class Dice extends BaseTimeEntity{
         this.author = author;
     }
 
-
 }
