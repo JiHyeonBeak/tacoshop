@@ -3,6 +3,7 @@ package io.tacoshopservice.main.domain.user;
 import jakarta.persistence.Entity;
 import jakarta.persistence.*;
 import lombok.Getter;
+import lombok.Builder;
 import lombok.NoArgsConstructor;
 
 @Getter
@@ -19,5 +20,11 @@ public class Users {
 
     @Column(nullable = false)
     private String email;
+
+    @Builder
+    public Users(String name, String email, String picture) {
+        this.name = name;
+        this.email = email;
+    }
 
 }
