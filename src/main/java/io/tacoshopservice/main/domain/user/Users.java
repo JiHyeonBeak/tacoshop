@@ -21,10 +21,14 @@ public class Users {
     @Column(nullable = false)
     private String email;
 
+    @Column(nullable = false)
+    private Boolean status;
+
     @Builder
     public Users(String name, String email, String picture) {
         this.name = name;
         this.email = email;
+        this.status = status;
     }
 
 }
