@@ -25,7 +25,7 @@ public class Users {
     private Boolean status;
 
     @Builder
-    public Users(String name, String email, String picture) {
+    public Users(String name, String email, Boolean status) {
         this.name = name;
         this.email = email;
         this.status = status;
