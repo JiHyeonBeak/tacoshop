@@ -1,4 +1,4 @@
-package io.tacoshopservice.main.controller;
+package io.tacoshopservice.main.web.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
