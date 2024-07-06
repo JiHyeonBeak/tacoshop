@@ -8,7 +8,7 @@ public class MainController {
 
     @GetMapping("/main")
     public String getMain() {
-        return "tacoshop";
+        return "Tacoshop";
     }
 
     @GetMapping("/getJoin")
